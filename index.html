@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrossel Danki Code</title>
+
+         <!--Ícones do Font Awesome-->
+         <script src="https://kit.fontawesome.com/3de8d0c5ee.js" crossorigin="anonymous"></script>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--JS-->
+        <script defer src="./js/script.js"></script>
+    </head>
+    <body>
+
+        <!--Flecha esquerda-->
+        <i class="fas fa-arrow-left flecha" onclick="flechaEsquerda()"></i>
+
+        <!--CARROSSEL-->
+        <div class="carrossel">
+            <div class="container" id="containerImg">
+                <img src="./img/1.jpg" alt="Imagem1" title="Imagem1">
+                <img src="./img/2.jpg" alt="Imagem2" title="Imagem2">
+                <img src="./img/3.jpg" alt="Imagem3" title="Imagem3">
+                <img src="./img/4.jpg" alt="Imagem4" title="Imagem4">
+                <img src="./img/5.jpg" alt="Imagem5" title="Imagem5">
+            </div>
+        </div>
+
+         <!--Flecha direita-->
+        <i class="fas fa-arrow-right flecha" onclick="flechaDireita()"></i>
+        
+
+        <!--Botões circulares embaixo do carrossel-->
+        <div class="botoes">
+            <div class="botao"></div>
+            <div class="botao"></div>
+            <div class="botao"></div>
+            <div class="botao"></div>
+            <div class="botao"></div>
+        </div>
+        
+    </body>
+</html>

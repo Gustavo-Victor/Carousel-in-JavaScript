@@ -1,0 +1,84 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*corpo*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+}
+
+/*carrossel*/
+.carrossel{
+    width: 500px;
+    height: 500px;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+}
+
+/*container flex*/
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    flex-direction: row;
+}
+
+/*cada imagem do container*/
+.carrossel .container img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+
+/*botose*/
+.botoes{
+    margin-top: 2%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+}
+
+/*cada botão individual*/
+.botoes .botao{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/*quando cada botão estiver ativo*/
+.botoes .botao.active{
+    background-color: dodgerblue;
+}
+
+/*flechas*/
+.flecha{
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+}
+
+.fa-arrow-left{
+    left: 300px;
+    top: 300px;
+}
+
+.fa-arrow-right{
+    right: 300px;
+    top: 300px;
+}
